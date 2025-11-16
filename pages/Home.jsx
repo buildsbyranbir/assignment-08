@@ -106,16 +106,19 @@ const Home = () => {
                     <h2 className="text-center text-3xl font-bold mb-8">Trusted By Millions, Built For You</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         <div>
-                            <p className="text-5xl font-bold">29.6M</p>
-                            <p className="text-lg opacity-80">Total Downloads</p>
+                            <p className="opacity-80">Total Downloads</p> 
+                            <p className="text-5xl font-bold">29.6M</p> <br />
+                            <p className="opacity-80">21% More Than Last Month</p>
                         </div>
                         <div>
-                            <p className="text-5xl font-bold">906K</p>
-                            <p className="text-lg opacity-80">Total Reviews</p>
+                            <p className="opacity-80">Total Reviews</p>
+                            <p className="text-5xl font-bold">906K</p> <br />
+                            <p className="opacity-80">46% More Than Last Month</p>
                         </div>
                         <div>
-                            <p className="text-5xl font-bold">132+</p>
-                            <p className="text-lg opacity-80">Active Apps</p>
+                            <p className=" opacity-80">Active Apps</p>
+                            <p className="text-5xl font-bold">132+</p> <br />
+                            <p className="opacity-80">31 More Will Launch</p>
                         </div>
                     </div>
                 </div>
