@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AppCard from '../components/AppCard';
 import { apps } from '../data/apps';
 import { FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
+import heroImg from '../assets/hero.png';
 
 
 // SVG Icons for the showcase
@@ -68,20 +69,17 @@ const Home = () => {
                     <div className="mt-8 flex justify-center space-x-4">
                          <Link
                          to="/google-play"
-    className="flex items-center gap-2 border border-gray-300 bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition">
-    <FaGooglePlay className="text-green-600 w-5 h-5" />
-    <span className="font-medium">Google Play</span>
-  </Link>
-
-  <Link
-    to="/app-store"
-    className="flex items-center gap-2 border border-gray-300 bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition"
-  >
-    <FaAppStoreIos className="text-blue-600 w-5 h-5" />
-    <span className="font-medium">App Store</span>
-  </Link>
-
-</div>
+                         className="flex items-center gap-2 border border-gray-300 bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition">
+                            <FaGooglePlay className="text-green-600 w-5 h-5" />
+                            <span className="font-medium">Google Play</span>
+                             </Link>
+                             <Link
+                              to="/app-store"
+                              className="flex items-center gap-2 border border-gray-300 bg-white text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-100 transition" >
+                                <FaAppStoreIos className="text-blue-600 w-5 h-5" />
+                                <span className="font-medium">App Store</span>
+                                </Link>
+                                </div>
 
 
 
@@ -95,7 +93,7 @@ const Home = () => {
                     </div>
                     {/* Central Phone Image - positioned absolutely to center and hang off bottom */}
                     <div className="absolute -bottom-24 md:-bottom-32 lg:-bottom-48 left-1/2 -translate-x-1/2 z-10">
-                        <img src="../assets/hero.png" alt="App Showcase" className="w-auto h-72 sm:h-80 md:h-96 lg:h-[26rem] drop-shadow-2xl" />
+                    <img src={heroImg} alt="App Showcase" className="w-auto h-72 sm:h-80 md:h-96 lg:h-[26rem] drop-shadow-2xl" />
                     </div>
                 </div>
             </div>
