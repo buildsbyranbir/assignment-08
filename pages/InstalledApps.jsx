@@ -3,7 +3,6 @@ import { useInstalledApps } from '../hooks/useInstalledApps';
 import { apps } from '../data/apps';
 import { AppContext } from '../App';
 import { Link } from 'react-router-dom';
-import AppErrorImage from '../assets/App-Error.png';
 
 const InstalledAppCard = ({ app, onUninstall }) => (
   <div className="flex items-center justify-between p-4 border border-gray-200 rounded-lg bg-white shadow-sm">
@@ -100,7 +99,7 @@ const InstalledApps = () => {
       ) : (
         <div className="text-center py-16 border-2 border-dashed border-gray-300 rounded-lg">
           <img
-            src={AppErrorImage}
+            src="/App-Error.png"
             alt="App Not Found"
             className="mx-auto w-72 h-72 object-contain mb-6"
             onError={(e) => (e.currentTarget.src = 'https://api.dicebear.com/8.x/identicon/svg?seed=app-not-found')}
