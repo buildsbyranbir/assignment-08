@@ -9,7 +9,7 @@ const StarIcon = ({ className }) => (
 
 const DownloadIcon = ({ className }) => (
     <svg xmlns="http://www.w3.org/2000/svg" className={className || "h-4 w-4"} viewBox="0 0 20 20" fill="currentColor">
-        <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 9.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 7.414V13a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm7-14a1 1 0 00-1 1v7l-3-3a1 1 0 10-1.414 1.414l4.707 4.707a1 1 0 001.414 0l4.707-4.707A1 1 0 0014 8l-3 3V4a1 1 0 00-1-1z" clipRule="evenodd" />
     </svg>
 );
 

@@ -13,7 +13,14 @@ const Toast = ({ message, show, type, onHide }) => {
   const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
 
   return (
-    <div className={`fixed bottom-5 right-5 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 ${show ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'} ${bgColor}`}>
+    <div
+      className={`
+        fixed top-5 right-5 text-white px-6 py-3 rounded-lg shadow-lg
+        transform transition-all duration-300 z-50
+        ${show ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 pointer-events-none'}
+        ${bgColor}
+      `}
+    >
       {message}
     </div>
   );
