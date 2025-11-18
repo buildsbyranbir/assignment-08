@@ -47,11 +47,7 @@ const Home = () => {
     <div className="relative h-64 md:h-72 flex justify-center items-center"></div>
 
     <div className="absolute -bottom-24 md:-bottom-32 lg:-bottom-48 left-1/2 -translate-x-1/2 z-10">
-        <img
-            src="/hero.png"
-            alt="App Showcase"
-            className="w-auto h-72 sm:h-80 md:h-96 lg:h-[26rem] drop-shadow-2xl"
-        />
+        <img src="/hero.png" alt="App Showcase" />
     </div>
 </div>
 
