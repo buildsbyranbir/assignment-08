@@ -9,7 +9,6 @@ const AppNotFound = ({ isForSearch = false }) => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4 py-8">
-      <img src="https://i.imgur.com/fohB6w5.png" alt="App Not Found" className="w-full max-w-xs" />
       <h1 className="text-3xl md:text-4xl font-bold text-dark-blue mt-8">{title}</h1>
       <p className="text-lg text-slate mt-4 max-w-lg">
         {message}
