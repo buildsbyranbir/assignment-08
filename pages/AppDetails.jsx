@@ -44,7 +44,7 @@ const AppDetails = () => {
                     <div className="flex flex-wrap items-center gap-x-8 gap-y-4 my-6 text-center">
 
     <div className="flex flex-col items-center">
-        <img src="../assets/icon-downloads.png" alt="" />
+        <img src="/icon-downloads.png" alt="" />
         <p className="text-sm text-slate">Downloads</p>
         <p className="text-xl font-bold">{formatNumber(app.downloads)}</p>
     </div>
@@ -52,7 +52,7 @@ const AppDetails = () => {
     <div className="border-l border-gray-300 h-10"></div>
     
     <div className="flex flex-col items-center">
-        <img src="../assets/icon-ratings.png" alt="" />
+        <img src="/icon-ratings.png" alt="" />
         <p className="text-sm text-slate">Average Ratings</p>
         <p className="text-xl font-bold flex items-center gap-1">
             {app.ratingAvg}
@@ -63,7 +63,7 @@ const AppDetails = () => {
     <div className="border-l border-gray-300 h-10"></div>
 
     <div className="flex flex-col items-center">
-        <img src="../assets/icon-review.png" alt="" />
+        <img src="/icon-review.png" alt="" />
         <p className="text-sm text-slate">Total Reviews</p>
         <p className="text-xl font-bold">{formatNumber(app.reviews)}</p>
         
